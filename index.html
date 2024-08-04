@@ -9,7 +9,37 @@
 
         <title>kephalosk | Blogpost Card</title>
 
-        <style></style>
+        <style>
+            @font-face {
+                font-family: "Figtree";
+                src: url('assets/fonts/Figtree/static/Figtree-Medium.ttf') format('truetype');
+            }
+
+            @font-face {
+                font-family: "Figtree";
+                src: url('assets/fonts/Figtree/static/Figtree-ExtraBold.ttf') format('truetype');
+                font-weight: bold;
+            }
+
+            #author {
+                font-family: Figtree,sans-serif;
+                font-weight: bold;
+            }
+
+            h1 {
+                font-family: Figtree,sans-serif;
+                font-weight: bold;
+            }
+
+            label {
+                font-family: Figtree,sans-serif;
+                font-weight: bold;
+            }
+
+            p {
+                font-family: Figtree,sans-serif;
+            }
+        </style>
     </head>
     <body>
         <main>
@@ -25,7 +55,7 @@
                 </p>
                 <div title="author">
                     <img src="assets/images/userpic.png" alt="profile picture">
-                    <span title="name">Greg Hooper</span>
+                    <span id="author" title="name">Greg Hooper</span>
                 </div>
             </section>
         </main>
