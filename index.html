@@ -22,22 +22,76 @@
             }
 
             #author {
+                align-items: center;
+                display: flex;
+                margin-top: 24px;
+            }
+
+            #authorName {
                 font-family: Figtree,sans-serif;
+                font-size: 14px;
                 font-weight: bold;
+                margin-left: 11px;
+            }
+
+            body {
+                align-items: center;
+                background-color: #F4D04E;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
 
             h1 {
                 font-family: Figtree,sans-serif;
+                font-size: 24px;
                 font-weight: bold;
             }
 
+            header p {
+                font-size: 14px;
+                margin-top: 22px;
+            }
+
+            header img {
+                margin-bottom: 24px;
+            }
+
             label {
+                background-color: #F4D04E;
+                border-radius: 4px;
                 font-family: Figtree,sans-serif;
+                font-size: 14px;
                 font-weight: bold;
+                padding: 8px 12px;
+            }
+
+            main {
+                background-color: #FFFFFF;
+                border: 1px solid #111111;
+                border-radius: 20px;
+                box-shadow: 8px 8px #000000;
+                margin: 219px 0;
+                padding: 24px;
+                width: 336px;
+                transition: box-shadow 0.3s ease;
+            }
+
+            main:hover {
+                box-shadow: 16px 16px #000000;
+            }
+
+            main h1 {
+                transition: color 0.3s ease;
+            }
+
+            main:hover h1 {
+                color: #F4D04E;
             }
 
             p {
                 font-family: Figtree,sans-serif;
+                font-size: 16px;
             }
         </style>
     </head>
@@ -53,9 +107,9 @@
                 <p>
                     These languages are the backbone of every website, defining structure, content, and presentation.
                 </p>
-                <div title="author">
+                <div id="author" title="author">
                     <img src="assets/images/userpic.png" alt="profile picture">
-                    <span id="author" title="name">Greg Hooper</span>
+                    <span id="authorName" title="name">Greg Hooper</span>
                 </div>
             </section>
         </main>
