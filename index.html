@@ -21,6 +21,36 @@
                 font-weight: bold;
             }
 
+            @media (max-width: 450px) {
+                main {
+                    background-color: #FFFFFF;
+                    border: 1px solid #111111;
+                    border-radius: 20px;
+                    box-shadow: 8px 8px #000000;
+                    margin: 156px 12px;
+                    padding: 24px;
+                    width: calc(100% - 24px);
+                    transition: box-shadow 0.3s ease;
+                }
+            }
+
+            @media (min-width: 451px) {
+                main {
+                    background-color: #FFFFFF;
+                    border: 1px solid #111111;
+                    border-radius: 20px;
+                    box-shadow: 8px 8px #000000;
+                    margin: 219px 0;
+                    padding: 24px;
+                    width: 336px;
+                    transition: box-shadow 0.3s ease;
+                }
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
             #author {
                 align-items: center;
                 display: flex;
@@ -28,6 +58,7 @@
             }
 
             #authorName {
+                color: #111111;
                 font-family: Figtree,sans-serif;
                 font-size: 14px;
                 font-weight: bold;
@@ -43,38 +74,32 @@
             }
 
             h1 {
+                color: #111111;
                 font-family: Figtree,sans-serif;
                 font-size: 24px;
                 font-weight: bold;
             }
 
             header p {
+                color: #111111;
                 font-size: 14px;
                 margin-top: 22px;
             }
 
             header img {
                 margin-bottom: 24px;
+                width: 100%;
+                height: auto;
             }
 
             label {
                 background-color: #F4D04E;
                 border-radius: 4px;
+                color: #111111;
                 font-family: Figtree,sans-serif;
                 font-size: 14px;
                 font-weight: bold;
                 padding: 8px 12px;
-            }
-
-            main {
-                background-color: #FFFFFF;
-                border: 1px solid #111111;
-                border-radius: 20px;
-                box-shadow: 8px 8px #000000;
-                margin: 219px 0;
-                padding: 24px;
-                width: 336px;
-                transition: box-shadow 0.3s ease;
             }
 
             main:hover {
@@ -90,6 +115,7 @@
             }
 
             p {
+                color: #6B6B6B;
                 font-family: Figtree,sans-serif;
                 font-size: 16px;
             }
@@ -98,7 +124,11 @@
     <body>
         <main>
             <header>
-                <img src="assets/images/blog_image_desktop.png" alt="blogpost thumbnail">
+                <picture>
+                    <source srcset="assets/images/blog_image_mobile.png" media="(max-width: 450px)">
+                    <source srcset="assets/images/blog_image_desktop.png" media="(min-width: 451px)">
+                    <img src="assets/images/blog_image_desktop.png" alt="blogpost thumbnail">
+                </picture>
                 <label>Learning</label>
                 <p>Published 21 Dec 2023</p>
             </header>
